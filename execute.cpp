@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 #include "memory.h"
+#include "get_instruction.h"
 using namespace std;
 int main()
 {
@@ -18,12 +19,14 @@ int main()
         current.Update(A, B);
     }
 
-    /*
+    // it completely about how can we execute the program
 
-     here will the execution of the code
+    vector<Instruction> Program = getInstructions("program.txt");
 
-     will do it later
-    */
+    for (auto pos : Program)
+    {
+        pos.print();
+    }
 
     cout << "\nExecution Successful!!\nEnter Memory Location To Get the Updated Values Or press 2 to STOP\n";
     while (1)

@@ -8,7 +8,7 @@ class Memory
 {
 private:
     map<string, int> data;
-    int A, B, C, D, E, F;
+   int A, B, C, D, E, F;
 
 public:
     Memory()
